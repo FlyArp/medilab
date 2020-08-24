@@ -491,6 +491,9 @@ body {
 		// .form-section__button_message
 		&_message {
 			margin: 20px auto 0;
+			@media (max-width: $md1) {
+				margin: 20px auto 0;
+			}
 		}
 	}
 	// .form-section__input
@@ -508,8 +511,11 @@ body {
 			justify-content: center;
 		}
 		// // .form-section__container_message
-		// &_message {
-		// }
+		&_message {
+			flex-wrap: wrap;
+			max-width: 720px;
+			margin: 0 auto;
+		}
 	}
 }
 .form {
@@ -573,14 +579,28 @@ body {
 			width: 100%;
 			padding: 16px 20px 0;
 			margin-top: 20px;
+			margin-left: 0;
 			@media (max-width: $md3) {
 				margin-top: 10px;
 			}
 		}
 	}
-	// // .form__textarea
-	// &__textarea {
-	// }
+	// .form__message
+	&__message {
+		font-size: 15px;
+		line-height: 20px;
+		border: 1px solid #666666;
+		background-color: #ffffff;
+		border-radius: 23px;
+		min-height: 92px;
+		max-height: 200px;
+		width: 100%;
+		padding: 16px 20px 0;
+		margin-top: 20px;
+		@media (max-width: $md3) {
+			margin-top: 10px;
+		}
+	}
 }
 .section {
 	padding: 60px 0;
