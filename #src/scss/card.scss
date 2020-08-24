@@ -1,0 +1,28 @@
+.text-section {
+	background-color: #f8f7f3;
+	font-size: 15px;
+	line-height: 20px;
+	// .text-section_bg-pic
+	&_bg-pic {
+		position: relative;
+		background: url('../img/card/bg-doc2.jpg') no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	// .text-section_bg-tran
+	&_bg-tran {
+		background-color: transparent;
+
+		.section {
+			padding-bottom: 0;
+		}
+	}
+	// .text-section__text
+	&__text {
+		margin-bottom: 18px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+

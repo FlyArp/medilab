@@ -9,8 +9,6 @@
 }
 // Подключение шрифтов
 @import "fonts";
-
-
 //===============================================================================================================================================================================================
 // Обнуление
 *{padding: 0;margin: 0;border: 0;}
@@ -40,14 +38,13 @@ $md4 : 319px;
 // $darker-color :;
 $main-font : "OpenSans", sans-serif; 
 // $sec-font :"Roboto Slab", serif;
-
-
 // =====================================================================================================================================================================================================
 // Import
 @import "owl.carousel.min";
 // @import "owl.theme.default.min";
 @import "ui";
 @import "contact";
+@import "card";
 // =====================================================================================================================================================================================================
 
 body {
@@ -393,6 +390,10 @@ body {
 		@media (max-width: $md3) {
 			padding: 40px 15px;
 		}
+		// .intro__form_l
+		&_l {
+			margin: 0;
+		}
 	}
 	// .intro__wrapper
 	&__wrapper {
@@ -671,9 +672,25 @@ body {
 }
 .about {
 	position: relative;
-	background: url('../img/index/about-bg.png') no-repeat;
+	background: url('../img/index/bg-doc.png') no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
+	// .about_product
+	&_product {
+		background: none;
+		@media (max-width: $md3) {
+			.about__description {
+				margin-bottom: 16px;
+			}
+			.about__strong {
+				display: block;
+				margin-bottom: 15px;
+			}	
+			.about__list {
+				display: block;
+			}
+		}
+	}
 	&__container {
 		position: relative;
 		z-index: 10;
@@ -685,6 +702,11 @@ body {
 		@media (max-width: $md1) {
 			flex-wrap: wrap;
 			justify-content: center;
+		}
+		@media (max-width: $md3) {
+			& + & {
+				margin-top: 35px;
+			}
 		}
 	}
 	// .about__text
@@ -703,13 +725,22 @@ body {
 	// .about__description
 	&__description {
 		margin-bottom: 25px;
+		@media (max-width: $md3) {
+			margin-bottom: 0;
+		}
 	}
 	// .about__strong
 	&__strong {
 		margin-bottom: 25px;
+		@media (max-width: $md3) {
+			display: none;
+		}
 	}
 	// .about__list
 	&__list {
+		@media (max-width: $md3) {
+			display: none;
+		}
 		li {
 			padding-left: 18px;
 			position: relative;
@@ -750,6 +781,25 @@ body {
 		}
 		@media (max-width: $md3) {
 			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	// .about__price
+	&__price {
+		font-weight: 600;
+		color: #ffaa17;
+		font-size: 30px;
+		margin-top: 30px;
+		@media (max-width: $md3) {
+			margin-top: 10px;
+		}
+	}
+	// .about__button
+	&__button {
+		margin: 40px auto 0;
+		display: block;
+		@media (max-width: $md3) {
+			margin-top: 14px;
 		}
 	}
 }
@@ -802,6 +852,13 @@ body {
 	padding-bottom: 0px;
 	@media (max-width: $md3) {
 		padding-bottom: 0;
+	}
+	// .price_b
+	&_b {
+		padding-bottom: 60px;
+		@media (max-width: $md3) {
+			padding-bottom: 40px;
+		}
 	}
 	// .price__text
 	&__text {
@@ -1400,5 +1457,33 @@ body {
 	// .crumbs__link
 	&__link {
 		color: #19bdff;
+	}
+}
+.text-section {
+	background-color: #f8f7f3;
+	font-size: 15px;
+	line-height: 20px;
+	// .text-section_bg-pic
+	&_bg-pic {
+		position: relative;
+		background: url('../img/card/bg-doc2.jpg') no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	// .text-section_bg-tran
+	&_bg-tran {
+		background-color: transparent;
+		padding-bottom: 0;
+		@media (max-width: $md3) {
+			padding-bottom: 0;
+		}
+		
+	}
+	// .text-section__text
+	&__text {
+		margin-bottom: 18px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
