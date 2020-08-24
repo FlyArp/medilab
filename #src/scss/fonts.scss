@@ -1,0 +1,41 @@
+@include font("OpenSans", "OpenSans-Bold", "700", "normal");
+@include font("OpenSans", "OpenSans-ExtraBold", "800", "normal");
+@include font("OpenSans", "OpenSans-BoldItalic", "700", "italic");
+@include font("OpenSans", "OpenSans-ExtraBoldItalic", "800", "italic");
+@include font("OpenSans", "OpenSans-Italic", "400", "italic");
+@include font("OpenSans", "OpenSans-Light", "300", "normal");
+@include font("OpenSans", "OpenSans-LightItalic", "300", "italic");
+@include font("OpenSans", "OpenSans-Regular", "400", "normal");
+@include font("OpenSans", "OpenSans-Semibold", "600", "normal");
+@include font("OpenSans", "OpenSans-SemiboldItalic", "600", "italic");
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?c2a3mp');
+  src:  url('../fonts/icomoon.eot?c2a3mp#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?c2a3mp') format('truetype'),
+    url('../fonts/icomoon.woff?c2a3mp') format('woff'),
+    url('../fonts/icomoon.svg?c2a3mp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-keyboard_arrow_right:before {
+  content: "\e900";
+}

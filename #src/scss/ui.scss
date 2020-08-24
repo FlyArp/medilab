@@ -1,0 +1,49 @@
+// // ===========================================================================================================
+// // Burger menu
+
+// Burger
+.burger {
+	// display: inline-block;
+	width: 25px;
+	height: 20px;
+	position: relative;
+	cursor: pointer;
+	z-index: 1;
+
+	&:before, &:after,& span{
+		content:'';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		left: 0;
+		transition: all .3s ease;
+	}
+	& span {
+			top: 8px;
+		}
+	&:before {
+			top: 0;
+		}
+	&:after {
+		bottom: 0;
+	}
+
+// 	@media (max-width: $md2) {
+// 		display: block;
+// 	}
+	&.active {
+		&:before {
+			transform: rotate(45deg);
+			top: 8px;
+		}
+		&:after {
+			transform: rotate(-45deg);
+			bottom: 8px;
+		}
+		& span {
+			transform: scale(0);
+		}
+	}
+}
+// // ===========================================================================================================

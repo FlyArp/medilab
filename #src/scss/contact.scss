@@ -1,0 +1,102 @@
+.section {
+	// .section__title
+	&__title {
+	}
+}
+.contact {
+	// .contact__title
+	&__title {
+		@media (max-width: $md3) {
+			margin-bottom: 30px;
+		}
+	}
+	// .contact__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $md2) {
+			flex-wrap: wrap;
+		}
+		@media (max-width: $md3) {
+			margin: 0 -15px;
+		}
+	}
+	// .contact__info
+	&__info {
+		flex: 0 0 20%;
+		margin-right: 20px;
+		@media (max-width: $md2) {
+			order: 1;
+			margin-right: 0;
+			margin: 20px 0 0;
+			background-color: #ffffff;
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+			border-radius: 10px;
+			padding: 40px 20px;
+			flex: 0 0 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		@media (max-width: $md3) {
+			flex-wrap: wrap;
+		}
+	}
+	// .contact__line-contacts
+	&__line-contacts {
+		@media (max-width: $md2) {
+			margin-right: 20px;
+		}
+		@media (max-width: $md3) {
+			margin-right: 0;
+		}
+	}
+	// .contact__wrapper
+	&__wrapper {
+	}
+	// .contact__icon
+	&__icon {
+
+	}
+	// .contact__phone
+	&__phone {
+		height: 25px;
+	}
+	// .contact__law-data
+	&__law-data {
+	}
+	// .contact__map
+	&__map {
+		flex: 0 1 780px;
+		box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+		border-radius: 10px;
+		overflow: hidden;
+		@media (max-width: $md2) {
+			order: 0;
+			height: 300px;
+		}
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.law-data {
+	margin-top: 30px;
+	font-size: 15px;
+	display: flex;
+	justify-content: space-between;
+	p + p {
+		margin-top: 18px;
+	}
+	// .law-data__titles
+	&__titles {
+		font-weight: 600;
+		margin-right: 10px;
+		@media (max-width: $md3) {
+			margin-right: 50px;
+		}
+	}
+	// .law-data__values
+	&__values {
+	}
+}
