@@ -46,23 +46,47 @@ $(function() {
 		}
 	});
 
-	// Всплывающее окно ============================================================================================================================================
+	// Popup ============================================================================================================================================
 	// Появление
 	$('.callback__button').on('click', function(event) {
 		event.preventDefault();
 		$('.popup-wrapper').fadeIn('400');
+		$('.popup-callback').fadeIn('400');
 		$('body').addClass('lock');
 	});
+
+	$('form').on('submit', function(event) {
+		event.preventDefault();
+		var formData = $(this).serialize();
+		$.ajax({
+			url: '#',
+			type: 'GET',
+			data: formData,
+		})
+		.done(function() {
+			if (!($('.popup-wrapper').css('display') === 'block')) {
+				$('.popup-wrapper').fadeIn('400');
+			}
+			if ($('.popup-callback').css('display') === 'block') {
+				$('.popup-callback').fadeOut('400');
+			}
+			$('.popup-thank').fadeIn('400');
+			$('body').addClass('lock');
+		})
+	});
 	// Исчезновение
-	$('.popup-callback__close').on('click', function(event) {
+	$('.popup-close').on('click', function(event) {
 		event.preventDefault();
 		$('.popup-wrapper').fadeOut('400');
+		$('.popup-callback').fadeOut('400');
 		$('body').removeClass('lock');
 	});
 
-	$(document).on('click', function(event) {
+	$('.popup-wrapper').on('click', function(event) {
 		if (!event.target.closest('.popup-callback') && !event.target.closest('.callback__button') && $('.popup-wrapper').css('display') === 'block') {
 			$('.popup-wrapper').fadeOut('400');
+			$('.popup-callback').fadeOut('400');
+			$('.popup-thank').fadeOut('400');
 			$('body').removeClass('lock');
 		}
 	});

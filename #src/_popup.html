@@ -1,12 +1,18 @@
 <div class="popup-wrapper">
 	<form action="" class="form popup-callback">
-		<a href="#" class="popup-callback__close">x</a>
+		<a href="#" class="popup-close">x</a>
 		<p class="popup-callback__title">Заказать звонок</p>
 		<div class="form__container popup-callback__container">
-			<input type="text" class="form__input popup-callback__input" name="name" placeholder="Имя">
-			<input type="tel" class="form__input popup-callback__input" name="phone" placeholder="Телефон">
+			<input type="text" class="form__input popup-callback__input" name="name" placeholder="Имя" required>
+			<input type="tel" class="form__input popup-callback__input" name="phone" placeholder="Телефон" required>
 		</div>
-		<a href="#" class="button popup-callback__button">Отправить</a>
+		<input type="submit" class="button popup-callback__button" value="Отправить">
 	</form>
+	<div class="popup-thank">
+		<a href="#" class="popup-close">x</a>
+		<p class="popup-thank__title">Спасибо</p>
+		<p class="popup-thank__subtitle">Мы свяжемся с вами в течение 3-х минут</p>
+	</div>
 	<div class="popup-wrapper__overlay"></div>
 </div>
+
