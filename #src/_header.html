@@ -1,3 +1,4 @@
+<?php include "../data.php" ?>
 <header class="header">
 	<div class="header__top top-header">
 		<div class="container">
@@ -5,13 +6,11 @@
 				<div class="top-header__item top-header__item_sity">
 					Ваш город: <span>Москва</span>
 				</div>
-				<!-- Изменяемость -->
 				<div class="top-header__item top-header__item_address">
-					420000, г. Москва, ул. Князева, дом 5, офис 415
+					<?php echo $address; ?>
 				</div>
-				<!-- Изменяемость -->
 				<div class="top-header__item top-header__item_mail">
-					medkniga@mail.ru
+					<?php echo $mail; ?>
 				</div>
 				<div class="top-header__item top-header__item_time">
 					пн-пт 09:00-18:00
@@ -23,8 +22,8 @@
 		<div class="container">
 			<div class="middle-header__content">
 				<div class="middle-header__item">
-					<a href="#">
-						<img src="img/header/logo.png" alt="logo">
+					<a href="/">
+						<img src="/img/header/logo.png" alt="logo">
 					</a>
 				</div>
 				<div class="middle-header__item">
@@ -33,8 +32,7 @@
 							<span></span>
 						</div>
 						<div class="callback__content">
-							<!-- Изменяемость -->
-							<span class="callback__phone">+7 (495) 256-18-09</span>
+							<span class="callback__phone"><?php echo $tel; ?></span>
 							<a href="#" class="callback__button button">Заказать звонок</a>
 						</div>
 					</div>
@@ -159,11 +157,11 @@
 					</div>
 				</div>
 				<nav class="bottom-header__nav nav" data-da="callback__content,0,767">
-					<a href="#" class="nav__item">Цены</a>
-					<a href="#" class="nav__item">Каталог</a>
-					<a href="#" class="nav__item">Медсправка</a>
-					<a href="#" class="nav__item">Отзывы</a>
-					<a href="contact.html" class="nav__item">Контакты</a>
+					<a href="/price-list/" class="nav__item">Цены</a>
+					<a href="/uslugi/" class="nav__item">Каталог</a>
+					<a href="/medspravka/" class="nav__item">Медсправка</a>
+					<a href="/otzivy" class="nav__item">Отзывы</a>
+					<a href="/contacty/" class="nav__item">Контакты</a>
 				</nav>
 			</div>
 		</div>

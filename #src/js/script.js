@@ -54,7 +54,12 @@ $(function() {
 		$('.popup-callback').fadeIn('400');
 		$('body').addClass('lock');
 	});
-
+	$('.about__button').on('click', function(event) {
+		event.preventDefault();
+		$('.popup-wrapper').fadeIn('400');
+		$('.popup-callback').fadeIn('400');
+		$('body').addClass('lock');
+	});
 	$('form').on('submit', function(event) {
 		event.preventDefault();
 		var formData = $(this).serialize();
