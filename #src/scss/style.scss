@@ -2,7 +2,7 @@
 	@font-face {
 	font-family: $font_name;
 	font-display: swap;
-	src: url("/fonts/#{$file_name}.woff") format("woff"), url("/fonts/#{$file_name}.woff2") format("woff2");
+	src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
 	font-weight: #{$weight};
 	font-style: #{$style};
 	}
@@ -49,7 +49,7 @@ $main-font : "OpenSans", sans-serif;
 
 body {
 	font-family: $main-font;
-	background: url('/img/bg.png');
+	background: url('../img/bg.png');
 	font-size: 16px;
 	&.lock {
 		overflow: hidden;
@@ -104,7 +104,7 @@ body {
 		}
 		// .top-header__item_sity
 		&_sity {
-			background: url('/img/icons/sity.png') left center no-repeat;
+			background: url('../img/icons/sity.png') left center no-repeat;
 
 			span {
 				color: #4790ae;
@@ -113,17 +113,17 @@ body {
 		}
 		// .top-header__item_address
 		&_address {
-			background: url('/img/icons/address.png') left center no-repeat;
+			background: url('../img/icons/address.png') left center no-repeat;
 			background-size: 14px;
 		}
 		// .top-header__item_mail
 		&_mail {
-			background: url('/img/icons/mail.png') left center no-repeat;
+			background: url('../img/icons/mail.png') left center no-repeat;
 			background-size: 17px;
 		}
 		// .top-header__item_time
 		&_time {
-			background: url('/img/icons/time.png') left center no-repeat;
+			background: url('../img/icons/time.png') left center no-repeat;
 			background-size: 18px;
 		}
 	}
@@ -180,7 +180,7 @@ body {
 		line-height: 46px;
 		display: inline-block;
 		padding-left: 32px;
-		background: url('/img/icons/phone.png') left center no-repeat;
+		background: url('../img/icons/phone.png') left center no-repeat;
 		margin-right: 25px;
 		@media (max-width: $md1) {
 			padding-left: 0;
@@ -284,27 +284,27 @@ body {
 		padding: 15px 0 15px 38px;
 		// .item-list__title_dentist
 		&_dentist {
-			background: url('/img/header/dentist.png') left center no-repeat;
+			background: url('../img/header/dentist.png') left center no-repeat;
 		}
 		// .item-list__title_study
 		&_study {
-			background: url('/img/header/study.png') left center no-repeat;
+			background: url('../img/header/study.png') left center no-repeat;
 		}
 		// .item-list__title_s086
 		&_s086 {
-			background: url('/img/header/086.png') left center no-repeat;
+			background: url('../img/header/086.png') left center no-repeat;
 		}
 		// .item-list__title_catering
 		&_catering {
-			background: url('/img/header/catering.png') left center no-repeat;
+			background: url('../img/header/catering.png') left center no-repeat;
 		}
 		// .item-list__title_sport
 		&_sport {
-			background: url('/img/header/sport.png') left center no-repeat;
+			background: url('../img/header/sport.png') left center no-repeat;
 		}
 		// .item-list__title_work
 		&_work {
-			background: url('/img/header/work.png') left center no-repeat;
+			background: url('../img/header/work.png') left center no-repeat;
 		}
 		span {
 			line-height: 18px;
@@ -380,7 +380,7 @@ body {
 	&__form {
 		margin: 20px 0 0 298px;
 		padding: 0 10px;
-		background: url('/img/index/bg-intro.jpg') center no-repeat;
+		background: url('../img/index/bg-intro.jpg') center no-repeat;
 		background-size: cover;
 		text-align: center;
 		height: 415px;
@@ -674,7 +674,7 @@ body {
 }
 .about {
 	position: relative;
-	background: url('/img/index/bg-doc.png') no-repeat;
+	background: url('../img/index/bg-doc.png') no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
 	// .about_product
@@ -1413,7 +1413,7 @@ body {
 }
 .popup-callback {
 	display: none;
-	background: url('/img/index/bg-intro.jpg') center no-repeat;
+	background: url('../img/index/bg-intro.jpg') center no-repeat;
 	width: 408px;
 	padding: 40px 70px;
 	position: fixed;
@@ -1463,7 +1463,7 @@ body {
 }
 .popup-thank {
 	display: none;
-	background: url('/img/index/bg-intro.jpg') center no-repeat;
+	background: url('../img/index/bg-intro.jpg') center no-repeat;
 	width: 350px;
 	text-align: center;
 	padding: 40px 50px;
@@ -1512,7 +1512,7 @@ body {
 	// .text-section_bg-pic
 	&_bg-pic {
 		position: relative;
-		background: url('/img/card/bg-doc2.jpg') no-repeat;
+		background: url('../img/card/bg-doc2.jpg') no-repeat;
 		background-size: cover;
 		background-position: 50% 50%;
 	}
