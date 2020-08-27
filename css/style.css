@@ -1,7 +1,7 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-Bold.woff") format("woff"), url("/fonts/OpenSans-Bold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-ExtraBold.woff") format("woff"), url("/fonts/OpenSans-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/OpenSans-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-BoldItalic.woff") format("woff"), url("/fonts/OpenSans-BoldItalic.woff2") format("woff2");
+  src: url("../fonts/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/OpenSans-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
 }
@@ -25,7 +25,7 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-ExtraBoldItalic.woff") format("woff"), url("/fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2");
+  src: url("../fonts/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2");
   font-weight: 800;
   font-style: italic;
 }
@@ -33,7 +33,7 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-Italic.woff") format("woff"), url("/fonts/OpenSans-Italic.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
 }
@@ -41,7 +41,7 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-Light.woff") format("woff"), url("/fonts/OpenSans-Light.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
@@ -49,7 +49,7 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-LightItalic.woff") format("woff"), url("/fonts/OpenSans-LightItalic.woff2") format("woff2");
+  src: url("../fonts/OpenSans-LightItalic.woff") format("woff"), url("../fonts/OpenSans-LightItalic.woff2") format("woff2");
   font-weight: 300;
   font-style: italic;
 }
@@ -57,7 +57,7 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-Regular.woff") format("woff"), url("/fonts/OpenSans-Regular.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -65,7 +65,7 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-Semibold.woff") format("woff"), url("/fonts/OpenSans-Semibold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
@@ -73,15 +73,15 @@
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("/fonts/OpenSans-SemiboldItalic.woff") format("woff"), url("/fonts/OpenSans-SemiboldItalic.woff2") format("woff2");
+  src: url("../fonts/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/OpenSans-SemiboldItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'icomoon';
-  src: url("/fonts/icomoon.eot?c2a3mp");
-  src: url("/fonts/icomoon.eot?c2a3mp#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?c2a3mp") format("truetype"), url("/fonts/icomoon.woff?c2a3mp") format("woff"), url("/fonts/icomoon.svg?c2a3mp#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?c2a3mp");
+  src: url("../fonts/icomoon.eot?c2a3mp#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?c2a3mp") format("truetype"), url("../fonts/icomoon.woff?c2a3mp") format("woff"), url("../fonts/icomoon.svg?c2a3mp#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -550,7 +550,7 @@ h6 {
 
 body {
   font-family: "OpenSans", sans-serif;
-  background: url("/img/bg.png");
+  background: url("../img/bg.png");
   font-size: 16px;
 }
 
@@ -586,7 +586,7 @@ body.lock {
 }
 
 .top-header__item_sity {
-  background: url("/img/icons/sity.png") left center no-repeat;
+  background: url("../img/icons/sity.png") left center no-repeat;
 }
 
 .top-header__item_sity span {
@@ -595,17 +595,17 @@ body.lock {
 }
 
 .top-header__item_address {
-  background: url("/img/icons/address.png") left center no-repeat;
+  background: url("../img/icons/address.png") left center no-repeat;
   background-size: 14px;
 }
 
 .top-header__item_mail {
-  background: url("/img/icons/mail.png") left center no-repeat;
+  background: url("../img/icons/mail.png") left center no-repeat;
   background-size: 17px;
 }
 
 .top-header__item_time {
-  background: url("/img/icons/time.png") left center no-repeat;
+  background: url("../img/icons/time.png") left center no-repeat;
   background-size: 18px;
 }
 
@@ -646,7 +646,7 @@ body.lock {
   line-height: 46px;
   display: inline-block;
   padding-left: 32px;
-  background: url("/img/icons/phone.png") left center no-repeat;
+  background: url("../img/icons/phone.png") left center no-repeat;
   margin-right: 25px;
 }
 
@@ -737,27 +737,27 @@ body.lock {
 }
 
 .item-list__title_dentist {
-  background: url("/img/header/dentist.png") left center no-repeat;
+  background: url("../img/header/dentist.png") left center no-repeat;
 }
 
 .item-list__title_study {
-  background: url("/img/header/study.png") left center no-repeat;
+  background: url("../img/header/study.png") left center no-repeat;
 }
 
 .item-list__title_s086 {
-  background: url("/img/header/086.png") left center no-repeat;
+  background: url("../img/header/086.png") left center no-repeat;
 }
 
 .item-list__title_catering {
-  background: url("/img/header/catering.png") left center no-repeat;
+  background: url("../img/header/catering.png") left center no-repeat;
 }
 
 .item-list__title_sport {
-  background: url("/img/header/sport.png") left center no-repeat;
+  background: url("../img/header/sport.png") left center no-repeat;
 }
 
 .item-list__title_work {
-  background: url("/img/header/work.png") left center no-repeat;
+  background: url("../img/header/work.png") left center no-repeat;
 }
 
 .item-list__title span {
@@ -838,7 +838,7 @@ body.lock {
 .intro__form {
   margin: 20px 0 0 298px;
   padding: 0 10px;
-  background: url("/img/index/bg-intro.jpg") center no-repeat;
+  background: url("../img/index/bg-intro.jpg") center no-repeat;
   background-size: cover;
   text-align: center;
   height: 415px;
@@ -1043,7 +1043,7 @@ body.lock {
 
 .about {
   position: relative;
-  background: url("/img/index/bg-doc.png") no-repeat;
+  background: url("../img/index/bg-doc.png") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -1632,7 +1632,7 @@ body.lock {
 
 .popup-callback {
   display: none;
-  background: url("/img/index/bg-intro.jpg") center no-repeat;
+  background: url("../img/index/bg-intro.jpg") center no-repeat;
   width: 408px;
   padding: 40px 70px;
   position: fixed;
@@ -1678,7 +1678,7 @@ body.lock {
 
 .popup-thank {
   display: none;
-  background: url("/img/index/bg-intro.jpg") center no-repeat;
+  background: url("../img/index/bg-intro.jpg") center no-repeat;
   width: 350px;
   text-align: center;
   padding: 40px 50px;
@@ -1726,7 +1726,7 @@ body.lock {
 
 .text-section_bg-pic {
   position: relative;
-  background: url("/img/card/bg-doc2.jpg") no-repeat;
+  background: url("../img/card/bg-doc2.jpg") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
