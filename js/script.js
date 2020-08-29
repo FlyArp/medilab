@@ -179,7 +179,7 @@ move();
 	// $(window).on('scroll', function(event) {
 	// 	scrollOffset = $(window).scrollTop() + $(window).height();	
 	// });
-	if(document.title === "Home") {
+	if($('form').is('.intro__form') && !$('.intro__form').hasClass('intro__form_l')) {
 		$('.list-menu').addClass('lock');
 	}
 
@@ -241,6 +241,12 @@ move();
 			$('body').addClass('lock');
 		})
 	});
+	$('.button_review').on('click', function(event) {
+		event.preventDefault();
+		$('.popup-wrapper').fadeIn('400');
+		$('.popup-review').fadeIn('400');
+		$('body').addClass('lock');
+	});
 	// Исчезновение
 	$('.popup-close').on('click', function(event) {
 		event.preventDefault();
@@ -254,6 +260,7 @@ move();
 			$('.popup-wrapper').fadeOut('400');
 			$('.popup-callback').fadeOut('400');
 			$('.popup-thank').fadeOut('400');
+			$('.popup-review').fadeOut('400');
 			$('body').removeClass('lock');
 		}
 	});
@@ -287,7 +294,7 @@ move();
 		}
 	}
 
-	$('.reviews__container').owlCarousel({
+	$('.reviews__container.owl-carousel').owlCarousel({
 				items: 1,
 				loop: true,
 				navSpeed: 800,
